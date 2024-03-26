@@ -1,7 +1,7 @@
 import { ScrollParallax } from "react-just-parallax";
 import { curve, heroBackground, robot } from "../assets";
 import { BackgroundCircles, Gradient } from "./design/Hero";
-import { Notification } from "./";
+import { CompanyLogosComp, Notification } from "./";
 import Button from "./Button";
 import Section from "./Section";
 import { useRef } from "react";
@@ -91,6 +91,7 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
+        <CompanyLogosComp className={"hidden relative z-10 mt-20 lg:block"} />
       </div>
     </Section>
   );
