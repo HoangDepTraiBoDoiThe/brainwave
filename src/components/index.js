@@ -4,6 +4,7 @@ import Notification from "./Notification";
 import CompanyLogosComp from "./CompanyLogosComp";
 import Heading from "./Heading";
 import Benefits from "./Benefits";
+import Collaboration from "./Collaboration";
 
 export {
   Button,
@@ -12,4 +13,5 @@ export {
   CompanyLogosComp,
   Heading,
   Benefits,
+  Collaboration,
 };
