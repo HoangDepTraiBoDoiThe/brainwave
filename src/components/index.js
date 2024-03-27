@@ -5,6 +5,7 @@ import CompanyLogosComp from "./CompanyLogosComp";
 import Heading from "./Heading";
 import Benefits from "./Benefits";
 import Collaboration from "./Collaboration";
+import Services from "./Services";
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   Heading,
   Benefits,
   Collaboration,
+  Services,
 };

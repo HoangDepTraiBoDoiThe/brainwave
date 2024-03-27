@@ -1,4 +1,4 @@
-import { Benefits, Collaboration } from "./components";
+import { Benefits, Collaboration, Services } from "./components";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
@@ -9,6 +9,7 @@ function App() {
       <Hero />
       <Benefits />
       <Collaboration />
+      <Services />
     </>
   );
 }
