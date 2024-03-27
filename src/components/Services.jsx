@@ -71,7 +71,7 @@ const Services = () => {
                   photo editing feature. Try it now!
                 </p>
               </div>
-              <ScrollParallax isHorizontal>
+              <ScrollParallax>
                 <PhotoChatMessage />
               </ScrollParallax>
             </div>
@@ -112,7 +112,7 @@ const Services = () => {
                   width={520}
                   height={400}
                 />
-                <ScrollParallax isAbsolutelyPositioned isHorizontal>
+                <ScrollParallax isAbsolutelyPositioned>
                   <VideoChatMessage />
                 </ScrollParallax>
                 <VideoBar />

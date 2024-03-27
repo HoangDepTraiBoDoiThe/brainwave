@@ -1,3 +1,4 @@
+import { ScrollParallax } from "react-just-parallax";
 import { smallSphere, stars } from "../assets";
 import { pricing } from "../constants";
 import Heading from "./Heading";
@@ -18,7 +19,9 @@ const Pricing = () => {
             alt="sphere"
           />
           <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-            <img src={stars} width={950} height={400} alt="stars" />
+            <ScrollParallax>
+              <img src={stars} width={950} height={400} alt="stars" />
+            </ScrollParallax>
           </div>
         </div>
         <Heading
