@@ -1,5 +1,5 @@
-import { check } from "../assets";
-import { collabContent, collabText } from "../constants";
+import { brainwaveSymbol, check } from "../assets";
+import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 
@@ -30,6 +30,44 @@ const Collaboration = () => {
           <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[32rem] lg:mx-auto">
             {collabText}
           </p>
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
+            <div className="flex border border-n-6 w-60 aspect-square rounded-full m-auto">
+              <div className="w-[6rem] aspect-square rounded-full m-auto p-[0.2rem] bg-conic-gradient">
+                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
+                  <img
+                    src={brainwaveSymbol}
+                    width={48}
+                    height={48}
+                    alt="brainwave"
+                  />
+                </div>
+              </div>
+            </div>
+            <ul>
+              {collabApps.map((app, index) => (
+                <li
+                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
+                    index * 45
+                  }`}
+                  key={app.id}
+                >
+                  <div
+                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] border border-n-1/15 rounded-xl -rotate-${
+                      index * 45
+                    }`}
+                  >
+                    <img
+                      className="m-auto"
+                      width={app.width}
+                      height={app.height}
+                      alt={app.title}
+                      src={app.icon}
+                    />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </Section>
