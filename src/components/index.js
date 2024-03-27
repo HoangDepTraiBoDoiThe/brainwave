@@ -6,6 +6,7 @@ import Heading from "./Heading";
 import Benefits from "./Benefits";
 import Collaboration from "./Collaboration";
 import Services from "./Services";
+import Pricing from "./Pricing";
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   Benefits,
   Collaboration,
   Services,
+  Pricing,
 };
